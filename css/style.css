@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --blue: #1a4a79;
+    --purple: linear-gradient(180deg, #3c1164 0%, #761b89 50%);
     --secondary: #555555;
     --light: #f1f9fa;
     --dark: #1c1b17;
     --black: #000;
-    --golden: #AC9B47;
+    --golden: #F08A42;
     --yellow: #AC9B47;
     --red: #1a4a79;
     --grey: #FAFAFA;
@@ -35,8 +35,8 @@ h6,
     font-family: var(--hfont);
 }
 
-.text-blue {
-    color: var(--blue) !important;
+.text-purple {
+    color: var(--purple) !important;
 }
 
 .text-golden {
@@ -71,8 +71,8 @@ h6,
     background: var(--light) !important;
 }
 
-.bg-blue {
-    background: var(--blue) !important;
+.bg-purple {
+    background: var(--purple) !important;
 }
 
 .radius-0 {
@@ -155,7 +155,7 @@ h6,
 }
 
 .h_colr {
-    background-color: var(--blue);
+    background-color: var(--purple);
 }
 
 .bg_blue_light {
@@ -323,7 +323,7 @@ h6,
 
 .navbar .navbar-nav .nav-link {
     margin: 20px 4px;
-    color: #000;
+    color: var(--bs-white);
     font-size: 14px;
     font-weight: 500;
     outline: none;
@@ -440,7 +440,7 @@ h6,
 .overlap_modal .modal {
     background-color: #0000007f;
     background-blend-mode: multiply;
-    background-image: url(../images/iigj/banners/1.jpg);
+    background-image: url(../images/mit/banners/1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1136,7 +1136,7 @@ iframe .widget_container {
 .admission .nav-link.active {
     color: var(--bs-dark);
     background-color: unset;
-    border: solid 1px var(--blue);
+    border: solid 1px var(--purple);
     border-radius: 14px;
 }
 
@@ -1172,7 +1172,7 @@ iframe .widget_container {
     }
 
     .mobile_hide {
-        background-image: url(../images/iigj/1.jpg);
+        background-image: url(../images/mit/1.jpg);
     }
 
     .fs-7 {
@@ -1310,7 +1310,7 @@ iframe .widget_container {
     position: absolute;
     right: 16px;
     top: -17px;
-    background: url(../images/iigj/left.jpg) no-repeat;
+    background: url(../images/mit/left.jpg) no-repeat;
     background-size: contain;
     width: 18px;
     height: 36px;
@@ -1321,7 +1321,7 @@ iframe .widget_container {
     position: absolute;
     right: -25px;
     top: 23px;
-    background: url(../images/iigj/right.jpg) no-repeat;
+    background: url(../images/mit/right.jpg) no-repeat;
     background-size: contain;
     width: 18px;
     height: 36px;
@@ -1364,7 +1364,7 @@ iframe .widget_container {
     border: 1px solid;
     padding: 15px;
     border-radius: 10px;
-    background-color: var(--blue);
+    background-color: var(--purple);
 }
 
 .bg-red_01 {
@@ -1531,7 +1531,7 @@ iframe .widget_container {
     position: absolute;
     right: 0px;
     top: 50px;
-    background: url(../images/iigj/testi/border_img.webp) no-repeat;
+    background: url(../images/mit/testi/border_img.webp) no-repeat;
     width: 11px;
     height: 100%;
 }
@@ -1776,7 +1776,7 @@ iframe .widget_container {
     content: '';
     color: var(--bs-white);
     left: 14px;
-    background: url(../images/iigj/feature/star.webp) no-repeat;
+    background: url(../images/mit/feature/star.webp) no-repeat;
     background-size: contain;
     position: absolute;
     width: 13px;

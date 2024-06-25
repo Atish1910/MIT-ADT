@@ -1,5 +1,5 @@
     <!-- Footer Start -->
-    <section class="bg-blue">
+    <section class="bg-purple">
         <div class="container   py-md-3 pt-5 footer wow fadeIn" data-wow-delay="0.1s" id="">
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
@@ -8,7 +8,7 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-md-2">
-                    <img src="images/iigj/logo/2.png" width="150px" alt="">
+                    <img src="images/mit/logo/2.png" width="150px" alt="">
                 </div>
                 <div class="col-md-10">
                     <div class="row">
@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="col-md-12 text-start  text-center mb-3 mb-md-0">
 
-                    <p class="mb-0">© Copyright 2024 IIGJ. Designed and developed by <img src="images/iigj/logo/3.png"
+                    <p class="mb-0">© Copyright 2024  MIT ADT University. Designed and developed by<img src="images/mit/logo/3.png"
                             width="70px" alt=""></p>
                 </div>
             </div>

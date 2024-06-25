@@ -15,11 +15,11 @@
  <!-- Topbar End -->
 
  <!-- Navbar Start -->
- <div class="container-fluid pt-0 sticky-top h_nav">
+ <div class="container-fluid pt-0 sticky-top h_nav bg-purple">
      <div class="container">
          <nav class="navbar navbar-expand-lg  navbar-light p-lg-0">
              <a href="<?= LINK; ?>" class="navbar-brand">
-                 <img src="images/iigj/logo/1.jpg" class="pt-2" alt="">
+                 <img src="images/mit/logo/2.png" class="pt-2" alt="">
              </a>
              <div class=""></div>
              <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
