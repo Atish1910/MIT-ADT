@@ -100,6 +100,30 @@
             }
         }
     });
+
+    
+    $(".mou-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        margin: 25,
+        loop: true,
+        center: true,
+        dots: true,
+        nav: true,
+        navText: ['<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 1
+            },
+            992: {
+                items: 1
+            }
+        }
+    });
+
     $('[data-bgimg]').each(function () {
         $(this).css('background-image', 'url(' + $(this).data('bgimg') + ')')
     })

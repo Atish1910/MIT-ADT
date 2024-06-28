@@ -2,13 +2,12 @@
 
 :root {
     --purple: linear-gradient(180deg, #3c1164 0%, #761b89 50%);
+    --red: linear-gradient(220deg, #931abf 0%, #cf0c6a 90%);
     --secondary: #555555;
     --light: #f1f9fa;
     --dark: #1c1b17;
     --black: #000;
     --golden: #F08A42;
-    --yellow: #AC9B47;
-    --red: #1a4a79;
     --grey: #FAFAFA;
     --hfont: 'Mukta', sans-serif;
     --cfont: 'Montserrat', sans-serif;
@@ -35,7 +34,7 @@ h6,
     font-family: var(--hfont);
 }
 
-.text-purple {
+.text-purple{
     color: var(--purple) !important;
 }
 
@@ -43,16 +42,16 @@ h6,
     color: var(--golden) !important;
 }
 
-.text-yellow {
-    color: var(--yellow) !important;
+.text-red {
+    color: var(--red) !important;
 }
 
 .bg-golden {
     background: var(--golden) !important;
 }
 
-.bg-yellow {
-    background: var(--yellow) !important;
+.bg-red {
+    background: var(--red) !important;
 }
 
 .bg-dark {
@@ -762,7 +761,7 @@ h6,
 
 .owl-item.center .testimonial-item,
 .testimonial-item:hover {
-    /* background: var(--golden); */
+    background: var(--golden);
 }
 
 .owl-item.center .testimonial-item *,
@@ -803,7 +802,7 @@ h6,
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-    /* background: var(--golden); */
+    background: var(--golden);
     color: var(--bs-white);
 }
 
@@ -848,7 +847,8 @@ h6,
 }
 
 .copyright {
-    background: #111111;
+    background: #521472;
+    border-top: 1px solid;
 }
 
 .copyright a:hover {
@@ -860,7 +860,15 @@ h6,
 }
 
 .navbar-brand img {
-    height: 60px;
+    height: 90px;
+    transition: 1s;
+}
+
+.navbar-brand img:hover {
+    height: 100px;
+    height: 100px;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 88%) !important;
+    border-radius: 13px;
 }
 
 .fetchButton {
@@ -926,7 +934,7 @@ h6,
 .c_btn {
     background-color: var(--golden);
     color: var(--bs-white) !important;
-    border-radius: 30px;
+    border-radius: 30px !important;
     font-size: 13px;
 }
 
@@ -953,7 +961,7 @@ h6,
 }
 
 .footer_02 a {
-    color: var(--yellow);
+    color: var(--red);
 }
 
 .footer_02 a:hover {
@@ -1136,7 +1144,7 @@ iframe .widget_container {
 .admission .nav-link.active {
     color: var(--bs-dark);
     background-color: unset;
-    border: solid 1px var(--purple);
+    border: solid 1px var(--golden);
     border-radius: 14px;
 }
 
@@ -1283,7 +1291,7 @@ iframe .widget_container {
 
 .head-text_02 {
     font-family: 'Lufga';
-    font-size: 65px;
+    font-size: 50px;
     line-height: 55px;
     font-weight: 900;
     text-transform: uppercase;
@@ -1329,7 +1337,7 @@ iframe .widget_container {
 
 .head-text_03 sup {
     font-weight: 700;
-    color: var(--yellow);
+    color: var(--red);
     top: 25px;
     left: 21px;
     position: absolute;
@@ -1627,6 +1635,37 @@ iframe .widget_container {
     bottom: -15px;
 }
 
+
+.mou .owl-prev {
+    height: 40px;
+    width: 40px;
+    background-color: var(--golden);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: unset;
+    left: 38%;
+    bottom: -15px;
+}
+
+.mou .owl-next {
+    height: 40px;
+    width: 40px;
+    background-color: var(--golden);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: unset;
+    right: 38%;
+    bottom: -15px;
+}
+
 .infra-carousel .owl-prev {
     height: 40px;
     width: 40px;
@@ -1731,11 +1770,9 @@ iframe .widget_container {
 }
 
 .company_01 img {
-    height: 170px !important;
+    height: 94px !important;
     width: 100%;
     object-fit: contain;
-    border-radius: 8px;
-    padding: 10px;
 }
 
 .venture_01 .head-text_03 {
@@ -1808,8 +1845,24 @@ iframe .widget_container {
     background-color: var(--golden) !important;
     text-transform: capitalize !important;
 }
-
+.why img{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    object-position: center;
+}
+.zoho_form_01{
+    height:510px;
+    width:99%;
+    border:none;
+}
 @media (min-width: 768px) {
+
+    
+.zoho_form_01{
+    height:620px;
+}
+
     .head-text_01 sup::before {
         right: 15px;
         top: -14px;
@@ -1891,7 +1944,10 @@ iframe .widget_container {
 
     .mb-90 {
         margin-top: 3rem;
-        margin-bottom: 10rem;
+        margin-bottom: 15rem;
+    }
+    .mt_10{
+        margin-top: -18rem;
     }
 
     .company_001 .owl-prev {
@@ -1906,11 +1962,28 @@ iframe .widget_container {
         right: -46px;
     }
 
+
+    .mou .owl-prev {
+        top: 40%;
+        bottom: unset;
+        left: -23px;
+    }
+
+    .mou .owl-next {
+        bottom: unset;
+        top: 40%;
+        right: -23px;
+    }
+
     #header-carousel .carousel-item:before {
         background: rgba(0, 0, 0, 0.70);
     }
 
     .bg_height_02 {
         background-color: rgb(0 0 0/ 60%);
+    }
+
+    .head-text_02 {
+        font-size: 65px;
     }
 }
