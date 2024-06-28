@@ -1,9 +1,6 @@
 <?php
   include 'link.php';
   
-  $a = file_get_contents('program.json');
-  $b = json_decode($a, true);
-  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -141,7 +138,7 @@
         <!-- ------------------------------------------------------------------------------------------------------------ -->
         <section class="py-5  bg-grey ">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="row pb-3">
                         <h3 class="text-center text-golden fw-bold ">WHY TO CHOOSE MIT ART, DESIGN, AND<br> TECHNOLOGY
                             UNIVERSITY?</h3>
@@ -157,7 +154,7 @@
                             <div class="row pb-3">
                                 <div class="bg-red rounded-3  text-white py-2 d-flex">
                                     <img src="images/mit/why/<?= $c[$i];?>.png" class="filter" alt="">
-                                    <div class="ps-md-3">
+                                    <div class="ps-3">
                                         <p class="h2 mb-0  text-white ">
                                             <span class=" mb-0 fw-bold  count"><?= $a[$i];?></span>+
                                         </p>
@@ -182,7 +179,7 @@
                             <div class="row pb-3">
                                 <div class="bg-red rounded-3  text-white py-2 d-flex">
                                     <img src="images/mit/why/<?= $c[$i];?>.png" class="filter" width="50px" alt="">
-                                    <div class="ps-md-3">
+                                    <div class="ps-3">
                                         <p class="h2 mb-0  text-white ">
                                             <span class=" mb-0 fw-bold  count"><?= $a[$i];?></span>+
                                         </p>
@@ -209,14 +206,14 @@
         <!-- ------------------------------------------------------------------------------------------------------------------ -->
 
         <section>
-            <div class="container py-5">
-                <div class="row">
+            <div class="container pt-5">
+                <div class="row justify-content-center">
                     <div class="row align-items-center pb-5 course_001">
                         <div class="col-md-4">
-                            <h4 class="fs-1">Here Are Our <span class="display-5 text-golden"> 200+ Industry Centred
+                            <h4 class="fs-2">Here Are Our <span class="display-6 text-golden"> 200+ Industry Centred
                                     Programs </span>To Choose From</h4>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 pt-4s pt-md-0">
                             <ul class="nav nav-tabs_01 nav-justified c_ul_1 maintabs wow fadeInUp animated nav nav-pills"
                                 id="pills-tab" role="tablist" data-wow-duration="1.5s">
                                 <li class="nav-item" role="presentation">
@@ -240,11 +237,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <?php include 'course.php';?>
-                    </div>
                 </div>
-            </div>
+        </section>
+        <section>
+            <?php include 'course.php';?>
         </section>
 
 
@@ -301,7 +297,7 @@
                             $b = array();
                             for ($i=1; $i < count($a); $i++) {
                             ?>
-                            <div class="col-md-2 company_01">
+                            <div class="col-md-2 col-6 company_01">
                                 <img src="images/mit/placement/<?= $a[$i];?>.png" loading="lazy" alt="">
                             </div>
 
@@ -324,7 +320,7 @@
                 <div class="row">
                     <div class="col-md-10 pt-4 pt-md-0">
                         <h5 class="fw-bold text-golden text-start fs-3 ps-4 mb-3">Teaching Pedagogy</h5>
-                        <ul class="h_list_num list-unstyled fs-5 text-white lh-lg ps-4 mb-0">
+                        <ul class="h_list_num list-unstyled fs-6 text-white lh-lg ps-md-4 mb-0">
                             <?php
                             $a = array("World-Class Curriculum with emphasis on Project Based Learning", "Finishing Schools for employability enhancement; across niche domains", "Industry expert faculty delivering value added programs", "A conductive atmosphere in the university, leading to a higher level of research", "Believes and practices Indian Culture, Values & Ethos to promote World Peace", "Unique, Innovative and Industry relevant courses across domains", "Training and Placement (T&P) Cell to help secure the best prospects with reputable MNCs around the world; offering 100 percent placement with 80% ","assistance to graduating students", "Incubation Center for entrepreneurial ideas & networking opportunities", "IGTT- Annual Conference with 100 Plus Eminent delegates in 20 plus Plenary sessions", "CRiEYA - Preincubation Hub for the Research and Innovation", "AIC Centre on 1 Lakh square Feet Research Park", "Centre of Excellence in Amazon, Agree Engineering, Sales force, Film Studio, Museum, Business Lab, Learning Platforms");
                             for ($i=0; $i < count($a); $i++) {
@@ -400,7 +396,7 @@
                         $b = array( "Publications", "Registered Copyrights", "Patents", "Design Registered");
                         for ($i=0; $i < count($a); $i++) {
                         ?>
-                        <div class="col-md-3 col-6  mb-3 mb-md-0">
+                        <div class="col-md-3 col-6 d-grid  mb-3 mb-md-0">
                             <div class=" bg-white border rounded-3  p-3  text-center">
                                 <p class=" display-5 mb-0">
                                     <span class=" mb-0 fw-bold  count"><?= $a[$i];?></span>+
@@ -413,8 +409,8 @@
                     ?>
                     </div>
                     <div class="row justify-content-around">
-                        <div class="col-md-6 ">
-                            <div class="row bg-white justify-content-center text-center  me-3">
+                        <div class="col-md-6 mb-5">
+                            <div class="row bg-white justify-content-center text-center  me-md-3">
                                 <h3 class="text-center fw-bold text-golden pt-3 ">MOU WITH UNIVERSITIES</h3>
                                 <?php
                             $z = array( "1", "2", "3","4","5", "6", "7","8","9");
@@ -430,7 +426,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 ">
-                            <div class="row bg-white  justify-content-center text-center ms-3 ">
+                            <div class="row bg-white  justify-content-center text-center ms-md-3 ">
                                 <h3 class="text-center fw-bold text-golden pt-3 ">MOU WITH COMPANIES</h3>
                                 <?php
                             $x = array("10","11", "12", "13","14","15", "16", "17","18");
@@ -467,7 +463,7 @@
                         $b = array( "Awarded as ‘Best University Campus’ by ASSOCHAM of India", "Only State Private University to get recognized by NITI Aayog, Govt. of India for ATAL Innovation Mission.", "Education Leadership Award by Dewang Mehta Foundation", "NPTEL Local Chapter in assoc. with IIT Bombay for MOOCs");
                         for ($i=0; $i < count($a); $i++) {
                         ?>
-                    <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="col-md-3 mb-3 mb-md-0 d-grid">
                         <div class=" bg-white border rounded-3  p-3  text-center">
                             <img src="images/mit/awords/<?= $a[$i];?>.png" height="150px" alt="">
                             <p class=""><?= $b[$i];?></p>
@@ -507,9 +503,9 @@
             s.src = "https://widgets.in8.nopaperforms.com/emwgts.js";
             document.body.appendChild(s);
         </script>
-       <!-- Start of HubSpot Embed Code -->
-<!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/45253889.js"></script> -->
-<!-- End of HubSpot Embed Code -->
+        <!-- Start of HubSpot Embed Code -->
+        <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/45253889.js"></script> -->
+        <!-- End of HubSpot Embed Code -->
 
 
 </body>
